@@ -1,1 +1,70 @@
-hello
+\documentclass[12pt]{report}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% --- Document Info ---
+\title{Bachelor Thesis Title}
+\author{Christian Deubel}
+\date{Leipzig University\\\today}
+
+% --- Begin Document ---
+\begin{document}
+
+% --- Title Page ---
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\Large Leipzig University\\[0.5cm]}
+    {\huge\bfseries Bachelor Thesis\\[1cm]}
+    {\Large Title of Your Thesis\\[2cm]}
+    \textbf{Author:} Christian Deubel\\
+    \textbf{Supervisor:} Prof. XYZ\\
+    \textbf{Submission Date:} \today
+    \vfill
+\end{titlepage}
+
+% --- Abstract ---
+\begin{abstract}
+This is the abstract of your thesis. Summarize your work in about 150–250 words.
+\end{abstract}
+
+% --- Table of Contents ---
+\tableofcontents
+\newpage
+
+% --- Chapters ---
+\chapter{Introduction}
+Write your introduction here.
+
+\chapter{Related Work}
+Discuss related literature.
+
+\chapter{Methodology}
+Explain your approach.
+
+\chapter{Experiments}
+Present your results.
+
+\chapter{Conclusion}
+Summarize findings and future work.
+
+% --- Bibliography ---
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+% --- Appendix (Optional) ---
+\appendix
+\chapter{Additional Material}
+Put appendices here.
+
+\end{document}
